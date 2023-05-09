@@ -38,7 +38,7 @@ let airportData = "https://raw.githubusercontent.com/Caracalla1081/Mapping_Earth
 d3.json(airportData).then(function(data) {
     console.log(data);
 
-    // Creating a GeoJSON layer with the retrieved data.
-  L.geoJSON(data).addTo(map);
-});
+// Creating a GeoJSON layer with the retrieved data.
+L.geoJSON(data).addTo(map);
 
+})
