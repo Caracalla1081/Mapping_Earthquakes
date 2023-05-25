@@ -102,7 +102,3 @@ function getRadius(magnitude) {
   return magnitude * 4;
 }
 
-
-
-    });
-
