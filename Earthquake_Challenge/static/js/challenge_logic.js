@@ -124,7 +124,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
 
 // 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week.
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson").then(function(data) {
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
 
 // 4. Use the same style as the earthquake data.
 function styleInfo(feature) {
@@ -216,7 +216,7 @@ legend.onAdd = function() {
 
 
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
-  d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function(plateData) {
+  d3.json("https://github.com/fraxen/tectonicplates/blob/339b0c56563c118307b1f4542703047f5f698fae/PB2002_boundaries.shx").then(function(plateData) {
       // Adding our geoJSON data, along with style information, to the tectonicplates
       // layer.
       L.geoJson(plateData, {
